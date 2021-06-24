@@ -1,6 +1,6 @@
 const { v4 } = require("uuid");
 const listContacts = require('./listcontacts');
-const updateContacts = require('./updatecontacts');
+const writeContacts = require('./writeContacts');
 
 const addContact = async (name, email, phone) => {
   try {
@@ -13,7 +13,7 @@ const addContact = async (name, email, phone) => {
     phone,
   };
     contacts.push(newContact);
-    await updateContacts(contacts);
+    await writeContacts(contacts);
     console.table(newContact);
     return newContact;
   } catch (error) {

@@ -29,7 +29,6 @@ function invokeAction({ action, id, name, email, phone }) {
 
 invokeAction(argv);
 
-
 // const { Command } = require('commander');
 // const program = new Command();
 
